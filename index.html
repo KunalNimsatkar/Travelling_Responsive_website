@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assests/img/favicon.png" type="image/png">
+  <title>Travelling Website</title>
+  <!--===============Style.CSS Link===============-->
+  <link rel="stylesheet" type="text/css" href="assests/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assests/css/swiper-bundle.min.css">
+  <!--===============Font Awesome CDN=============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--===============AOS Animation CSS Link=============-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!--===================Preloader=====================-->
+
+  <div class="loading" id="preloader"></div>
+
+  <!--===================Navbar section=====================-->
+  <header class="nav_container" id="nav">
+    <nav class="nav_items">
+      <a href="#home" class="nav_logo">Travel</a>
+      <div class="nav_list" id="nav-list">
+        <ul class="nav_ul">
+          <li class="nav_li"><a href="#home" class="active-link" id="nav_item_underline">home</a></li>
+          <li class="nav_li"><a href="#about">about</a></li>
+          <li class="nav_li"><a href="#discover">discover</a></li>
+          <li class="nav_li"><a href="#places">places</a></li>
+        </ul>
+        <i class="fa-solid fa-xmark nav_close" id="nav_close"></i>
+      </div>
+      <div class="nav_toggle" id="nav_toggle">
+        <i class="fa-solid fa-bars nav_menu"></i>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <!--===================Home section=====================-->
+
+    <section class="home_section" id="home">
+      <img src="assests/img/home1.jpg" class="home_img">
+
+      <div class="home_container container grid" data-aos="fade-down" data-aos-duration="1500">
+        <div class="home_content">
+          <p class="home_subtitle">
+            Discover your place
+          </p>
+          <h1 class="home_title">It feels good <br>to be lost in the
+            <br><b> right direction </b>
+          </h1>
+          <a href="#" class="button">explore </a>
+        </div>
+
+        <div class="social_links">
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+            <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--===================About section=====================-->
+    <section class="about_section section" id="about">
+      <div class="about_info_data container grid">
+        <div class="about_info" data-aos="fade-down" data-aos-duration="1000">
+          <h2 class="about_title section-title">
+            more information <br> about the best beaches</h2>
+          <p class="about_desc section-desc">You can find the most beautiful and pleasant places at the best prices with
+            special discounts, you choose the place we will guide
+            you all the way to wait, get your place now.</p>
+          <a href="#" class="button about_button">reserve a place</a>
+        </div>
+        <div class="about_img" data-aos="fade-down" data-aos-duration="1000">
+          <div class="about_img_overlay">
+            <img src="assests/img/about1.jpg" class="about_first">
+          </div>
+          <div class="about_img_overlay">
+            <img src="assests/img/about2.jpg" class="about_second">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===================Discover section=====================-->
+
+    <section class="discover_section section" id="discover">
+      <div class="discover_info" data-aos="fade-down" data-aos-duration="1000">
+        <h2 class="discover_info_title section-title">discover the most <br> attractive places</h2>
+      </div>
+
+      <div class="discover_container container swiper mySwiper" data-aos="fade-down" data-aos-duration="1500">
+        <div class="swiper-wrapper discover_wrapper">
+          <div class="discover_card swiper-slide">
+            <img src="assests/img/discover1.jpg" class="discover_img">
+            <div class="discover_data">
+              <h3 class="discover_title img_title">bali</h3>
+              <span class="discover_desc img_desc">24 hours Tour available</span>
+            </div>
+          </div>
+
+          <div class="discover_card swiper-slide">
+            <img src="assests/img/discover2.jpg" class="discover_img">
+            <div class="discover_data">
+              <h3 class="discover_title img_title">hawai</h3>
+              <span class="discover_desc img_desc">32 hours Tour available</span>
+            </div>
+          </div>
+
+          <div class="discover_card swiper-slide">
+            <img src="assests/img/discover3.jpg" class="discover_img">
+            <div class="discover_data">
+              <h3 class="discover_title img_title">europe</h3>
+              <span class="discover_desc img_desc">18hours Tour available</span>
+            </div>
+          </div>
+
+          <div class="discover_card swiper-slide">
+            <img src="assests/img/discover4.jpg" class="discover_img">
+            <div class="discover_data">
+              <h3 class="discover_title img_title">Maldives</h3>
+              <span class="discover_desc img_desc">32 hours Tour available</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===================Experience section=====================-->
+
+    <section class="experience_section section ">
+      <h2 class="experience_section_title section-title">With Our Experience <br>We Will Serve You</h2>
+      <div class="experience_container container grid ">
+        <div class="experience_data grid">
+          <div class="experience_card" data-aos="fade-down" data-aos-duration="1000">
+            <h2 class="experinece_title">20</h2>
+            <span class="experinece_desc">year <br>Experiance</span>
+          </div>
+          <div class="experience_card" data-aos="fade-down" data-aos-duration="1500">
+            <h2 class="experinece_title">75</h2>
+            <span class="experinece_desc">complete<br>tour</span>
+          </div>
+          <div class="experience_card" data-aos="fade-down" data-aos-duration="2000">
+            <h2 class="experinece_title">650+</h2>
+            <span class="experinece_desc">tourist<br>destination</span>
+          </div>
+        </div>
+
+        <div class="experinece_img grid">
+          <div class="experinece_overlay" data-aos="fade-down" data-aos-duration="2000">
+            <img src="assests/img/experience1.jpg" class="experience_img1">
+          </div>
+          <div class="experinece_overlay" data-aos="fade-down" data-aos-duration="2500">
+            <img src="assests/img/experience2.jpg" class="experience_img2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===================video section=====================-->
+
+    <section class="video_section section">
+      <h2 class="video_title section-title">Video Tour</h2>
+
+      <div class="video_container container">
+        <p class="video_desc section-desc" data-aos="fade-down" data-aos-duration="1000">Find out more with our video of
+          the most beautiful and pleasant places for
+          you and your family.
+        </p>
+
+        <div class="video_content" data-aos="fade-down" data-aos-duration="1500">
+          <video class="video_file" id="video-file">
+            <source src="assests/video/video.mp4" type="video/mp4">
+          </video>
+
+          <button class="video_button" id="video-button">
+            <i class="fa-solid fa-play video-icon" id="video-icon"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--===================places section=====================-->
+
+    <section class=" places_section section" id="places">
+      <h2 class="places_section_title section-title"> choose your places</h2>
+
+      <div class="places_container container grid">
+        <div class="places_card" data-aos="fade-down" data-aos-duration="1500">
+          <img src="assests/img/place1.jpg" class="places_img">
+          <div class="places_data">
+            <h3 class="places_title img_title">bali</h3>
+            <span class="places_desc img_desc">indonesia</span>
+            <p class="places_desc price">
+              <i class="fa-regular fa-dollar-sign"></i>2499
+            </p>
+          </div>
+        </div>
+
+        <div class="places_card" data-aos="fade-down" data-aos-duration="1500">
+          <img src="assests/img/place2.jpg" class="places_img">
+          <div class="places_data">
+            <h3 class="places_title img_title">bora bora</h3>
+            <span class="places_desc img_desc">polinesia</span>
+            <p class="places_desc price">
+              <i class="fa-regular fa-dollar-sign"></i>1099
+            </p>
+          </div>
+        </div>
+
+        <div class="places_card" data-aos="fade-down" data-aos-duration="1500">
+          <img src="assests/img/place3.jpg" class="places_img">
+          <div class="places_data">
+            <h3 class="places_title img_title">hawaii</h3>
+            <span class="places_desc img_desc">ee.uu</span>
+            <p class="places_desc price">
+              <i class="fa-regular fa-dollar-sign"></i>4499
+            </p>
+          </div>
+        </div>
+
+        <div class="places_card" data-aos="fade-down" data-aos-duration="1500">
+          <img src="assests/img/place4.jpg" class="places_img">
+          <div class="places_data">
+            <h3 class="places_title img_title">hvar</h3>
+            <span class="places_desc img_desc">croacia</span>
+            <p class="places_desc price">
+              <i class="fa-regular fa-dollar-sign"></i>1999
+            </p>
+          </div>
+        </div>
+
+        <div class="places_card" data-aos="fade-down" data-aos-duration="1500">
+          <img src="assests/img/place5.jpg" class="places_img">
+          <div class="places_data">
+            <h3 class="places_title img_title">white heaven</h3>
+            <span class="places_desc img_desc">austrialia</span>
+            <p class="places_desc price">
+              <i class="fa-regular fa-dollar-sign"></i>3499
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=============Newsletter Section==============-->
+
+    <section class="newsletter_section section">
+      <div class="newsletter_wrapper">
+        <div class="newsletter_data container">
+          <h2 class="newsletter_title">Subscribe Our <br>
+            Newsletter</h2>
+          <p class="newsletter_desc" data-aos="fade-down" data-aos-duration="1500">Subscribe to our newsletter and get a
+            special 30% discount</p>
+          <form class="newsletter_form" data-aos="fade-up" data-aos-duration="1500">
+            <input type="email" placeholder="Enter email" class="form-input">
+            <button type="submit" class="form-button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="sponsor_section section">
+      <div class="sponsor_container container grid">
+        <div class="sponsor_content" data-aos="fade-down" data-aos-duration="500">
+          <img src="assests/img/sponsors1.png" class="sponsors_img">
+        </div>
+
+        <div class="sponsor_content" data-aos="fade-down" data-aos-duration="700">
+          <img src="assests/img/sponsors2.png" class="sponsors_img">
+        </div>
+
+        <div class="sponsor_content" data-aos="fade-down" data-aos-duration="900">
+          <img src="assests/img/sponsors3.png" class="sponsors_img">
+        </div>
+
+        <div class="sponsor_content" data-aos="fade-down" data-aos-duration="1100">
+          <img src="assests/img/sponsors4.png" class="sponsors_img">
+        </div>
+
+        <div class="sponsor_content" data-aos="fade-down" data-aos-duration="1300">
+          <img src="assests/img/sponsors5.png" class="sponsors_img">
+        </div>
+      </div>
+    </section>
+
+    <!--=============Footer Section==============-->
+
+    <footer class="footer_section section" id="footer">
+      <div class="footer_container container grid">
+        <div class="footer_content grid">
+          <div class="footer_data" data-aos="fade-down" data-aos-duration="1000">
+            <h3 class="footer_data_title">Travel</h3>
+            <p class="footer_data_desc">
+              Travel you choose the <br>
+              destination, we offer you the<br>
+              experience.
+            </p>
+          </div>
+          <div class="footer_card" data-aos="fade-down" data-aos-duration="1500">
+            <h3 class="footer_title">About</h3>
+            <ul>
+              <li class="footer_item"><a href="#about">About us</a></li>
+              <li class="footer_item"><a href="#home">Features</a></li>
+              <li class="footer_item"><a href="#home">New & Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_card" data-aos="fade-down" data-aos-duration="1500">
+            <h3 class="footer_title">Company</h3>
+            <ul>
+              <li class="footer_item"><a href="#home">Team</a></li>
+              <li class="footer_item"><a href="#home">Plan Pricing</a></li>
+              <li class="footer_item"><a href="#home">Become a Member</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_card" data-aos="fade-down" data-aos-duration="1500">
+            <h3 class="footer_title">Support</h3>
+            <ul>
+              <li class="footer_item"><a href="#about">FAQs</a></li>
+              <li class="footer_item"><a href="#home">Support Center</a></li>
+              <li class="footer_item"><a href="#home">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer_rights">
+          <p class="footer_desc"><i class="fa-solid fa-copyright"></i> 2022 Code by Kunal Nimsatkar . All Rights
+            reserved</p>
+          <div class="footer_rights_links">
+            <a href="#home">Terms & Agreements</a>
+            <a href="#home">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+
+  <script src="assests/js/script.js"></script>
+  <script src="assests/js/swiper-bundle.min.js"></script>
+  <script src="assests/js/slider.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assests/js/AOS.js"></script>
+</body>
+
+</html>
