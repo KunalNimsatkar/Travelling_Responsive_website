@@ -209,7 +209,7 @@ button {
 .nav_li a {
   color: var(--text-color);
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .nav_li a:hover {
@@ -306,7 +306,47 @@ button {
 }
 
 /*====================Booking Section================*/
-
+.tour_form_section{
+  margin: 2rem 0 0 0;
+}
+.tour_container{
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem;
+    overflow: hidden;
+    background: #f3f3f3;
+    border-radius: 15px;
+}
+.form_wrapper{
+  display: flex;
+  flex-direction: column;
+} 
+.form_label{
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  color: var(--home_info-card-color);
+}
+.form_input{
+  border: 1px solid #c5adff;
+  height: 2rem;
+  border-radius: 5px;
+}
+.form_input::placeholder{
+  padding-left:0.5rem;
+  color: var(--text-color);
+}
+.form_input[type = date]{
+  padding-left:0.5rem;
+  color: var(--text-color);
+}
+.form_button{
+  margin: 1.3rem 0;
+}
+.form_btn{
+  padding: 0.5rem 1rem;
+}
 
 
 
@@ -334,7 +374,7 @@ button {
 }
 
 .about_first {
-  width: 130px;
+  width: 150px;
 }
 
 .about_second {
@@ -759,10 +799,25 @@ button {
   font-size: 0.9rem;
  }
  .nav_logo{
-  font-size: 1.2rem;
-  font-family: var(--raleway-font);
-  font-weight: 400;
+  font-size: 1.4rem;
+  font-family: var(--noto-sans-font);
+  font-weight: 600;
  }
+ .tour_form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+ }
+ .form_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_input{
+  width: 10rem;
+}
 }
 
 @media screen and (min-width: 1024px){
@@ -774,7 +829,7 @@ button {
     font-size: 1rem;
   }
   .home_title {
-    font-size: 3.3rem;
+    font-size: 4rem;
 }
 .about_title{
   font-size: 2rem;
@@ -830,6 +885,9 @@ button {
   .footer_data_desc, .footer_item a{
     font-size: 1rem;
   }
+  .form_input{
+  width: 14rem;
+}
 }
 
 @media screen and (min-width: 1200px){
