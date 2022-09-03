@@ -13,7 +13,7 @@
   --lato-font: 'Lato', sans-serif;
   --noto-sans-font: 'Noto Sans', sans-serif;
   --raleway-font: 'Raleway', sans-serif;
-  --header-height: 3rem;
+  --header-height: 3.8rem;
   --margin-auto: auto;
   --z-fixed: 100;
 
@@ -310,13 +310,15 @@ button {
   margin: 2rem 0 0 0;
 }
 .tour_container{
-  display: flex;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
     padding: 1rem;
     overflow: hidden;
     background: #ffffff;
     border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 .form_wrapper{
   display: flex;
