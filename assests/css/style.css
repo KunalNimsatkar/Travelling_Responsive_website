@@ -315,7 +315,8 @@ button {
     flex-direction: column;
     padding: 1rem;
     overflow: hidden;
-    background: #f3f3f3;
+    background: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 15px;
 }
 .form_wrapper{
@@ -327,19 +328,22 @@ button {
   padding: 0.5rem 0;
   font-weight: 500;
   color: var(--home_info-card-color);
+  font-family: var(--raleway-font);
 }
 .form_input{
-  border: 1px solid #c5adff;
-  height: 2rem;
-  border-radius: 5px;
+  height: 3rem;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .form_input::placeholder{
   padding-left:0.5rem;
-  color: var(--text-color);
+  opacity: 0.8;
+  font-weight: 100;
 }
 .form_input[type = date]{
-  padding-left:0.5rem;
+  padding:0 0.5rem;
   color: var(--text-color);
+  font-weight: 100;
 }
 .form_button{
   margin: 1.3rem 0;
