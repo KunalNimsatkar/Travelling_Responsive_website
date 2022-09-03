@@ -336,12 +336,15 @@ button {
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.form_input[type = date],
+.form_input::placeholder{
+  color:var(--text-color);
+}
+.form_input[type = "date"],
 .form_input[type = text],
-.form_input[type = number]{
+.form_input[type = Number]{
   padding: 0 0.8rem;
-  opacity: 0.8;
-  font-weight: 100;
+  font-weight: 400;
+  color: var(--text-color);
 }
 .form_button{
   margin: 1.8rem 0;
