@@ -316,7 +316,6 @@ button {
     padding: 1rem;
     overflow: hidden;
     background: #ffffff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 15px;
 }
 .form_wrapper{
@@ -335,18 +334,18 @@ button {
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.form_input::placeholder{
-  padding-left:0.5rem;
+.form_input[type = date],
+.form_input[type = text],
+.form_input[type = number]{
+  padding: 0 0.8rem;
   opacity: 0.8;
   font-weight: 100;
 }
-.form_input[type = date]{
-  padding:0 0.5rem;
-  color: var(--text-color);
-  font-weight: 100;
-}
 .form_button{
-  margin: 1.3rem 0;
+  margin: 1.8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .form_btn{
   padding: 0.5rem 1rem;
