@@ -335,6 +335,7 @@ button {
   height: 3rem;
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 250px;
 }
 .form_input::placeholder{
   color:var(--text-color);
